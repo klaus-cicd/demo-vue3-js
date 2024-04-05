@@ -1,4 +1,5 @@
 <template>
+  <BackHome/>
   <div style="border: solid">
     <h1>响应式对象获取&修改</h1>
     <hr/>
@@ -42,6 +43,8 @@
 // let count = 0;
 // 对数据进行使用ref后，才是响应式对象，类型为RefImpl, 对其值进行操作时需要对其value属性操作
 // 入参可以是任意值
+import BackHome from "@/components/BackHome.vue";
+
 let count = ref(0);
 
 let countAdd = () => {
