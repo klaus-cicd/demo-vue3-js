@@ -30,11 +30,6 @@
     <h1>toRaw: 深拷贝出一个普通对象</h1>
     <p>objToRaw: {{ objToRaw }}</p>
     <button @click="objToRawAgeAdd">objToRawAgeAdd</button>
-
-
-    <hr>
-    <h1>computed函数</h1>
-
   </div>
 </template>
 
@@ -109,7 +104,6 @@ let changeToRefName = () => {
   // 浅拷贝, 和原obj.name会互相影响
   toRefName.value = '赵六';
 }
-
 
 // 解构响应式对象为普通对象用, 互不影响, 无响应式
 let objToRaw = toRaw(obj);
