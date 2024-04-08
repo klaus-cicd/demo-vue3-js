@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import BackHome from "@/components/BackHome.vue";
 import {useRouter} from "vue-router";
 
 let count = ref(1);

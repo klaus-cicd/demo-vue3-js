@@ -7,7 +7,6 @@
 
 <script setup>
 import {useRoute} from "vue-router";
-import BackHome from "@/components/BackHome.vue";
 
 // 获取URL参数
 let id = useRoute().params.id
