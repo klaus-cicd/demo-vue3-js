@@ -25,11 +25,11 @@
 
   <hr/>
   <div>
-    <p>用户页跳转</p>
+    <span>用户页跳转</span>
     <div>
       <p style="display: inline-block;">用户ID:&nbsp;</p>
       <input v-model="userId"/>
-      <button @click="goToUserPage">跳转</button>
+      <el-button type="primary" @click="goToUserPage">跳转</el-button>
     </div>
   </div>
 

@@ -11,11 +11,11 @@ export default defineConfig({
         vue(),
         Components({
             imports: ['vue-router', 'vue'],
-            resolve: [ElementPlusResolver()]
+            resolvers: [ElementPlusResolver()]
         }),
         AutoImport({
             imports: ['vue-router', 'vue'],
-            resolve: [ElementPlusResolver()]
+            resolvers: [ElementPlusResolver()]
         })
     ],
     resolve: {
