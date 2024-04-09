@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import {ElementPlusResolver} from "unplugin-vue-components/resolvers";
 
+
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
@@ -14,8 +15,13 @@ export default defineConfig({
             resolvers: [ElementPlusResolver()]
         }),
         AutoImport({
+            // 自动导入 Vue 和 vue-router 相关函数，如：ref, reactive, toRef, useRouter() 等
             imports: ['vue-router', 'vue'],
-            resolvers: [ElementPlusResolver()]
+            // 自动导入 Element Plus 相关函数，如：ElMessage, ElMessageBox... (带样式)
+            resolvers: [
+                ElementPlusResolver(),
+
+            ]
         })
     ],
     resolve: {

@@ -1,7 +1,10 @@
 <template>
-  <router-link to="/home">
-    <button>Back home</button>
-  </router-link>
+  <div style="margin: 10px">
+    <router-link to="/home">
+      <el-button type="danger">Back home</el-button>
+    </router-link>
+  </div>
+
 </template>
 
 <script setup>

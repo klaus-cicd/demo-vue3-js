@@ -8,6 +8,17 @@ import Login from "@/components/Login.vue";
 import Parent from "@/components/Parent.vue";
 import Child from "@/components/Child.vue";
 import User from "@/components/User.vue";
+import Grandson from "@/components/Grandson.vue";
+import ParentB from "@/components/ParentB.vue";
+import ChildA from "@/components/ChildA.vue";
+import ChildB from "@/components/ChildB.vue";
+import ChildSlotA from "@/components/ChildSlotA.vue";
+import ParentSlot from "@/components/ParentSlot.vue";
+import ChildSlotB from "@/components/ChildSlotB.vue";
+import TeleportParent from "@/components/TeleportParent.vue";
+import TeleportChild from "@/components/TeleportChild.vue";
+import DynamicComponent from "@/components/DynamicComponent.vue";
+import AsyncComponent from "@/components/AsyncComponent.vue";
 
 const routes = [
     {
@@ -75,9 +86,64 @@ const routes = [
         component: Child
     },
     {
+        path: '/grandson',
+        name: 'Grandson',
+        component: Grandson
+    },
+    {
         path: '/user/:id',
         name: 'User',
         component: User
+    },
+    {
+        path: '/parentB',
+        name: 'ParentB',
+        component: ParentB
+    },
+    {
+        path: '/childA',
+        name: 'ChildA',
+        component: ChildA
+    },
+    {
+        path: '/childB',
+        name: 'ChildB',
+        component: ChildB
+    },
+    {
+        path: '/parentSlot',
+        name: 'ParentSlot',
+        component: ParentSlot
+    },
+    {
+        path: '/childSlotA',
+        name: 'ChildSlotA',
+        component: ChildSlotA
+    },
+    {
+        path: '/childSlotB',
+        name: 'ChildSlotB',
+        component: ChildSlotB
+    },
+    {
+        path: '/teleportParent',
+        name: 'TeleportParent',
+        component: TeleportParent
+    },
+    {
+        path: '/TeleportChild',
+        name: 'TeleportChild',
+        component: TeleportChild
+    },
+    {
+        path: '/dynamicComponent',
+        name: 'DynamicComponent',
+        component: DynamicComponent
+    },
+    {
+        path: '/asyncComponent',
+        name: 'AsyncComponent',
+        component: AsyncComponent
     }
 ]
 

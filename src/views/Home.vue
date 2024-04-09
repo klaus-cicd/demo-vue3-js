@@ -19,16 +19,24 @@
   <router-link to="/router">
     <button>VueRouter@4</button>
   </router-link>
-
-  <router-link to="/parent">Go to parent</router-link>
-  <router-link to="/child">Go to child</router-link>
-
+  <br>
+  <router-link to="Parent">跳转至Parent页面</router-link>
+  <br>
+  <router-link to="ParentB">跳转至ParentB页面</router-link>
+  <br>
+  <router-link to="ParentSlot">跳转至ParentSlot页面</router-link>
+  <br>
+  <router-link to="TeleportParent">跳转至TeleportParent页面</router-link>
+  <br>
+  <router-link to="DynamicComponent">跳转至DynamicComponent页面</router-link>
+  <br/>
+  <router-link to="AsyncComponent">跳转至异步组件页面</router-link>
   <hr/>
   <div>
     <span>用户页跳转</span>
     <div>
       <p style="display: inline-block;">用户ID:&nbsp;</p>
-      <input v-model="userId"/>
+      <el-input v-model="userId" style="width: 240px" placeholder="Please input user id"/>
       <el-button type="primary" @click="goToUserPage">跳转</el-button>
     </div>
   </div>
@@ -58,7 +66,7 @@ let goToUserPage = () => {
     params: {
       id: userId.value
     },
-    // ?后面的参数传参
+    // '?'后面的参数传参
     query: {
       code: userId.value
     }
