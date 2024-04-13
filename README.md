@@ -48,3 +48,10 @@
 
 待完善
 [AsyncComponent.vue](src%2Fcomponents%2FAsyncComponent.vue)
+
+## Vuex
+
+[store/index.js](src%2Fstore%2Findex.js)
+
+[05VuexTest.vue](src%2Fviews%2F05VuexTest.vue)
+

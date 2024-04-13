@@ -19,6 +19,7 @@ import TeleportParent from "@/components/TeleportParent.vue";
 import TeleportChild from "@/components/TeleportChild.vue";
 import DynamicComponent from "@/components/DynamicComponent.vue";
 import AsyncComponent from "@/components/AsyncComponent.vue";
+import VuexTest from '@/views/05VuexTest.vue';
 
 const routes = [
     {
@@ -144,6 +145,11 @@ const routes = [
         path: '/asyncComponent',
         name: 'AsyncComponent',
         component: AsyncComponent
+    },
+    {
+        path: '/vuexTest',
+        name: 'VuexTest',
+        component: VuexTest
     }
 ]
 
