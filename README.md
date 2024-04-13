@@ -55,3 +55,4 @@
 
 [05VuexTest.vue](src%2Fviews%2F05VuexTest.vue)
 
+## Pinia

@@ -30,7 +30,7 @@ const moduleAge = {
 }
 
 
-// 创建一个新的 store 实例
+// 创建一个新的 stores 实例
 const user = createStore({
     state() {
         return {

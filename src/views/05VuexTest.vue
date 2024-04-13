@@ -1,5 +1,5 @@
 <script setup>
-import user from "@/store/index.js";
+import user from "@/stores/index.js";
 import BackHome from "@/components/BackHome.vue";
 import {useStore} from "vuex";
 

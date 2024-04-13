@@ -150,7 +150,12 @@ const routes = [
         path: '/vuexTest',
         name: 'VuexTest',
         component: VuexTest
-    }
+    },
+    {
+        path: '/pinia',
+        name: 'Pinia',
+        component: () => import('@/views/06Pinia.vue')
+    },
 ]
 
 const router = createRouter({
