@@ -56,3 +56,7 @@
 [05VuexTest.vue](src%2Fviews%2F05VuexTest.vue)
 
 ## Pinia
+
+[counter.js](src%2Fstores%2Fcounter.js)
+
+[06Pinia.vue](src%2Fviews%2F06Pinia.vue)
