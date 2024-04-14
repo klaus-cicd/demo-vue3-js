@@ -34,7 +34,8 @@
   <br/>
   <router-link to="VuexTest">跳转至Vuex页面</router-link>
   <br/>
-  <router-link to="Pinia">Pinia示例</router-link>
+  <router-link to="Pinia">Pinia示例</router-link>  <br/>
+  <router-link to="Axios">Axios示例</router-link>
   <hr/>
   <div>
     <span>用户页跳转</span>

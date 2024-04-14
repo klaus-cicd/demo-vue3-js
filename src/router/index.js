@@ -156,6 +156,11 @@ const routes = [
         name: 'Pinia',
         component: () => import('@/views/06Pinia.vue')
     },
+    {
+        path: '/axios',
+        name: 'Axios',
+        component: () => import('@/views/07Axios.vue')
+    },
 ]
 
 const router = createRouter({
