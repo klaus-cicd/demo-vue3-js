@@ -25,8 +25,23 @@ service.interceptors.response.use(response => {
 
 export default service;
 
-export function get(url, paramA) {
-    return axios.get(url + '?a=' + paramA)
+export function get(url, queryParamsMap = {}, headerMap = {}) {
+    if (queryParamsMap instanceof Map) {
+        let urlParams;
+        let index = 0;
+        for (const [key, value] of queryParamsMap.entries()) {
+            if (index === 0) {
+                urlParams = '?';
+            } else {
+                urlParams += '&';
+            }
+            urlParams += (key + '=' + value)
+            index++;
+        }
+        url += urlParams
+    }
+
+    return axios.get(url)
 }
 
 export function post(url, data) {
