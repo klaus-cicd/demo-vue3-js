@@ -6,7 +6,6 @@ import BackHome from "./components/BackHome.vue";
 import user from "@/stores/index.js";
 import {createPinia} from "pinia";
 import piniaPluginPersist from "pinia-plugin-persist";
-import service from '@/utils/request.js'
 
 
 let app = createApp(App);
@@ -18,6 +17,3 @@ app.use(router)
     // 全局引用组件
     .component('BackHome', BackHome)
     .mount('#app');
-
-// 全局引入axios工具
-app.config.globalProperties.$service = service;

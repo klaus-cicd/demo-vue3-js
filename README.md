@@ -60,3 +60,9 @@
 [counter.js](src%2Fstores%2Fcounter.js)
 
 [06Pinia.vue](src%2Fviews%2F06Pinia.vue)
+
+## Axios
+
+[request.js](src%2Futils%2Frequest.js)
+
+[07Axios.vue](src%2Fviews%2F07Axios.vue)
